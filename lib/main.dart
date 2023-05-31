@@ -37,17 +37,17 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Stack(
         children: [
           Align(
-            alignment: const Alignment(0, -0.9),
+            alignment: const Alignment(0, -0.8),
             child: Text(
               "Test your\nreaction speed",
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 38, fontWeight: FontWeight.bold, color: Colors.white),
+              style: TextStyle(fontSize: 38, fontWeight: FontWeight.w900, color: Colors.white),
             ),
           ),
           Align(
             alignment: Alignment.center,
             child: ColoredBox(
-              color: Colors.black12,
+              color: const Color(0xFF6D6D6D),
               child: SizedBox(
                 height: 160,
                 width: 300,
@@ -55,14 +55,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Text(
                     millisecondsText,
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 36, fontWeight: FontWeight.w500  , color: Colors.white),
+                    style: TextStyle(fontSize: 36, fontWeight: FontWeight.w500, color: Colors.white),
                   ),
                 ),
               ),
             ),
           ),
           Align(
-            alignment: const Alignment(0, 0.9),
+            alignment: const Alignment(0, 0.8),
             child: GestureDetector(
               onTap: () => setState(() {
                 switch (gameState) {
@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Center(
                     child: Text(
                       _getButtonText(),
-                      style: TextStyle(fontSize: 38, color: _getButtonColor()),
+                      style: TextStyle(fontSize: 38, fontWeight: FontWeight.w900, color: Colors.white),
                     ),
                   ),
                 ),
